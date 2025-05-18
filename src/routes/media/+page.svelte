@@ -36,7 +36,7 @@
 			title: 'Beethoven Symphony No. 7',
 			thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg', // Placeholder image
 			description:
-				"Eline Solheim conducts the Copenhagen Philharmonic in Beethoven's Symphony No. 7.",
+				"Eline Storheim conducts the Copenhagen Philharmonic in Beethoven's Symphony No. 7.",
 			date: 'March 15, 2025',
 			videoId: 'dQw4w9WgXcQ', // This is just a placeholder YouTube ID
 			type: 'performance'
@@ -45,7 +45,8 @@
 			id: 2,
 			title: 'Interview: The Art of Conducting',
 			thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg', // Placeholder image
-			description: 'Eline Solheim discusses her approach to conducting and musical interpretation.',
+			description:
+				'Eline Storheim discusses her approach to conducting and musical interpretation.',
 			date: 'February 3, 2025',
 			videoId: 'dQw4w9WgXcQ', // This is just a placeholder YouTube ID
 			type: 'interview'
@@ -55,7 +56,7 @@
 			title: 'Sibelius Violin Concerto',
 			thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg', // Placeholder image
 			description:
-				'Eline Solheim conducts the Stockholm Royal Orchestra with soloist Maria Johansson.',
+				'Eline Storheim conducts the Stockholm Royal Orchestra with soloist Maria Johansson.',
 			date: 'January 20, 2025',
 			videoId: 'dQw4w9WgXcQ', // This is just a placeholder YouTube ID
 			type: 'performance'
@@ -65,7 +66,7 @@
 			title: 'Conducting Masterclass',
 			thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg', // Placeholder image
 			description:
-				'Eline Solheim gives a masterclass on conducting technique at the Royal Danish Academy of Music.',
+				'Eline Storheim gives a masterclass on conducting technique at the Royal Danish Academy of Music.',
 			date: 'December 5, 2024',
 			videoId: 'dQw4w9WgXcQ', // This is just a placeholder YouTube ID
 			type: 'masterclass'
@@ -107,29 +108,29 @@
 	const press: PressItem[] = [
 		{
 			id: 1,
-			title: 'Eline Solheim: A Rising Star in the Conducting World',
+			title: 'Eline Storheim: A Rising Star in the Conducting World',
 			publication: 'Classical Music Today',
 			date: 'May 2, 2025',
 			excerpt:
-				'Eline Solheim has quickly established herself as one of the most compelling young conductors in Europe, with interpretations that reveal new aspects of even the most familiar works...',
+				'Eline Storheim has quickly established herself as one of the most compelling young conductors in Europe, with interpretations that reveal new aspects of even the most familiar works...',
 			link: '#'
 		},
 		{
 			id: 2,
-			title: 'Review: Solheim Brings Fresh Perspective to Mahler',
+			title: 'Review: Storheim Brings Fresh Perspective to Mahler',
 			publication: 'The Copenhagen Music Review',
 			date: 'April 15, 2025',
 			excerpt:
-				"In her interpretation of Mahler's Symphony No. 4, Solheim demonstrated a remarkable sensitivity to the work's delicate textures while never losing sight of its dramatic arc...",
+				"In her interpretation of Mahler's Symphony No. 4, Storheim demonstrated a remarkable sensitivity to the work's delicate textures while never losing sight of its dramatic arc...",
 			link: '#'
 		},
 		{
 			id: 3,
-			title: 'Interview: Eline Solheim on Women in Classical Music',
+			title: 'Interview: Eline Storheim on Women in Classical Music',
 			publication: 'Nordic Arts Journal',
 			date: 'March 8, 2025',
 			excerpt:
-				'In our exclusive interview, conductor Eline Solheim discusses the changing landscape for women in classical music and her initiative to mentor young female conductors...',
+				'In our exclusive interview, conductor Eline Storheim discusses the changing landscape for women in classical music and her initiative to mentor young female conductors...',
 			link: '#'
 		}
 	];

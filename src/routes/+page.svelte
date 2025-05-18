@@ -7,7 +7,7 @@
 		<!-- Hero section -->
 		<section class="mb-20 text-center">
 			<h1 class="mb-6 font-serif text-5xl font-bold text-slate-800 md:text-6xl lg:text-7xl">
-				Eline Solheim
+				Eline Storheim
 			</h1>
 			<p class="mb-8 text-xl text-slate-600 italic md:text-2xl">Classical Conductor</p>
 
@@ -28,7 +28,7 @@
 			<h2 class="mb-6 text-center font-serif text-3xl text-slate-800 md:text-4xl">Biography</h2>
 			<div class="prose prose-lg mx-auto text-slate-700">
 				<p>
-					Eline Solheim is a distinguished conductor known for her dynamic interpretations of both
+					Eline Storheim is a distinguished conductor known for her dynamic interpretations of both
 					classical and contemporary repertoire. With a profound musical insight and commanding
 					podium presence, she has led performances with renowned orchestras across Europe and
 					beyond.
@@ -87,7 +87,7 @@
 
 	<footer class="bg-slate-800 py-8 text-white">
 		<div class="container mx-auto px-4 text-center">
-			<p>&copy; {new Date().getFullYear()} Eline Solheim. All rights reserved.</p>
+			<p>&copy; {new Date().getFullYear()} Eline Storheim. All rights reserved.</p>
 			<div class="mt-4 flex justify-center gap-6">
 				<a href="/" class="text-white hover:text-slate-300">Instagram</a>
 				<a href="/" class="text-white hover:text-slate-300">Twitter</a>

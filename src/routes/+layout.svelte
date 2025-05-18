@@ -25,7 +25,7 @@
 		<div class="container mx-auto px-4">
 			<nav class="flex items-center justify-between py-4">
 				<!-- Logo/Name -->
-				<a href="/" class="font-serif text-2xl font-bold text-slate-800">Eline Solheim</a>
+				<a href="/" class="font-serif text-2xl font-bold text-slate-800">Eline Storheim</a>
 
 				<!-- Desktop Navigation -->
 				<div class="hidden items-center space-x-8 md:flex">

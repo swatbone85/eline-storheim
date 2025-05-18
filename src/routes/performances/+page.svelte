@@ -24,7 +24,7 @@
 			venue: 'Royal Danish Concert Hall',
 			location: 'Copenhagen, Denmark',
 			description:
-				'Eline Solheim conducts the Copenhagen Philharmonic Orchestra in a program of Beethoven and Brahms.',
+				'Eline Storheim conducts the Copenhagen Philharmonic Orchestra in a program of Beethoven and Brahms.',
 			ticketLink: '#'
 		},
 		{

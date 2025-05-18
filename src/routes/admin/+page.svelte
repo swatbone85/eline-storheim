@@ -35,7 +35,7 @@
 			venue: 'Royal Danish Concert Hall',
 			location: 'Copenhagen, Denmark',
 			description:
-				'Eline Solheim conducts the Copenhagen Philharmonic Orchestra in a program of Beethoven and Brahms.',
+				'Eline Storheim conducts the Copenhagen Philharmonic Orchestra in a program of Beethoven and Brahms.',
 			ticketLink: '#'
 		},
 		{
@@ -301,7 +301,7 @@
 </script>
 
 <svelte:head>
-	<title>Admin Dashboard | Eline Solheim</title>
+	<title>Admin Dashboard | Eline Storheim</title>
 </svelte:head>
 
 {#if isLoading}
@@ -384,7 +384,7 @@
 		<!-- Admin Header -->
 		<header class="bg-slate-800 py-4 text-white">
 			<div class="container mx-auto flex items-center justify-between px-4">
-				<h1 class="font-serif text-2xl">Eline Solheim Admin</h1>
+				<h1 class="font-serif text-2xl">Eline Storheim Admin</h1>
 				<button on:click={handleLogout} class="rounded bg-slate-700 px-4 py-2 hover:bg-slate-600">
 					Log Out
 				</button>

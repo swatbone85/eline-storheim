@@ -1,10 +1,10 @@
-# Eline Solheim - Classical Conductor Website
+# Eline Storheim - Classical Conductor Website
 
-A professional website for classical conductor Eline Solheim, showcasing her performances, biography, media, and contact information.
+A professional website for classical conductor Eline Storheim, showcasing her performances, biography, media, and contact information.
 
 ## Overview
 
-This website serves as a digital presence for Eline Solheim, featuring:
+This website serves as a digital presence for Eline Storheim, featuring:
 
 - Professional biography and background
 - Upcoming performances calendar
@@ -66,7 +66,22 @@ pnpm dev
 
 4. Open your browser and navigate to `http://localhost:5173`
 
+### Running Locally
+
+Start the development server:
+
+```bash
+npm run dev
+# or
+pnpm dev
+
+# To open the app in a new browser tab
+npm run dev -- --open
+```
+
 ### Building for Production
+
+To create a production build:
 
 ```bash
 npm run build
@@ -74,7 +89,7 @@ npm run build
 pnpm build
 ```
 
-Preview the production build:
+You can preview the production build with:
 
 ```bash
 npm run preview
@@ -150,45 +165,3 @@ This website can be deployed to any static hosting service:
 # or
 
 pnpm install
-
-````
-
-### Running Locally
-
-Start the development server:
-
-```bash
-npm run dev
-# or
-pnpm dev
-
-# To open the app in a new browser tab
-npm run dev -- --open
-````
-
-### Building for Production
-
-To create a production build:
-
-```bash
-npm run build
-# or
-pnpm build
-```
-
-You can preview the production build with:
-
-```bash
-npm run preview
-# or
-pnpm preview
-```
-
-## Admin Access
-
-For testing purposes, the admin panel can be accessed at `/admin` with the following credentials:
-
-- Username: `eline`
-- Password: `admin123`
-
-**Note**: In a production environment, proper authentication should be implemented.

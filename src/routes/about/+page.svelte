@@ -4,7 +4,7 @@
 
 <div class="bg-slate-50 py-16">
 	<div class="container mx-auto max-w-4xl px-4">
-		<h1 class="mb-12 text-center font-serif text-5xl text-slate-800">About Eline Solheim</h1>
+		<h1 class="mb-12 text-center font-serif text-5xl text-slate-800">About Eline Storheim</h1>
 
 		<div class="mb-16 flex flex-col gap-10 md:flex-row">
 			<div class="md:w-1/3">
