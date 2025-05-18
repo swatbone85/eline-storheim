@@ -397,7 +397,11 @@
 		<div class="max-h-[90vh] w-full max-w-4xl overflow-auto rounded-lg bg-white">
 			<div class="flex items-center justify-between border-b border-slate-200 p-4">
 				<h3 class="font-serif text-xl font-semibold">{selectedVideo.title}</h3>
-				<button on:click={closeVideoModal} class="text-slate-500 hover:text-slate-700">
+				<button
+					on:click={closeVideoModal}
+					class="text-slate-500 hover:text-slate-700"
+					aria-label="Close video"
+				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
