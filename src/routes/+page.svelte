@@ -89,10 +89,19 @@
 		<div class="container mx-auto px-4 text-center">
 			<p>&copy; {new Date().getFullYear()} Eline Storheim. All rights reserved.</p>
 			<div class="mt-4 flex justify-center gap-6">
-				<a href="/" class="text-white hover:text-slate-300">Instagram</a>
-				<a href="/" class="text-white hover:text-slate-300">Twitter</a>
-				<a href="/" class="text-white hover:text-slate-300">YouTube</a>
-				<a href="/" class="text-white hover:text-slate-300">Facebook</a>
+				<a
+					href="https://www.instagram.com/storheimen/"
+					class="text-white hover:text-slate-300"
+					target="_blank"
+				>
+					Instagram</a
+				>
+
+				<a
+					href="https://www.facebook.com/eline.storheim"
+					class="text-white hover:text-slate-300"
+					target="_blank">Facebook</a
+				>
 			</div>
 		</div>
 	</footer>
