@@ -78,8 +78,8 @@
 			<h2 class="mb-6 text-center font-serif text-3xl text-slate-800 md:text-4xl">Contact</h2>
 			<div class="mx-auto max-w-2xl text-center">
 				<p class="mb-6 text-lg text-slate-700">For bookings, interviews, and other inquiries:</p>
-				<a href="mailto:contact@elinesolheim.com" class="text-xl text-slate-800 hover:underline">
-					contact@elinesolheim.com
+				<a href="mailto:contact@elinestorheim.com" class="text-xl text-slate-800 hover:underline">
+					contact@elinestorheim.com
 				</a>
 			</div>
 		</section>

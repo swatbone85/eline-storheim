@@ -100,7 +100,7 @@ pnpm preview
 ## Project Structure
 
 ```
-eline-solheim/
+eline-storheim/
 ├── src/
 │   ├── app.css            # Global styles
 │   ├── app.html           # HTML template

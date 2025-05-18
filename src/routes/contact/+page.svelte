@@ -68,10 +68,10 @@
 							<div>
 								<h3 class="text-lg font-medium text-slate-800">Email</h3>
 								<a
-									href="mailto:contact@elinesolheim.com"
+									href="mailto:contact@elinestorheim.com"
 									class="text-slate-600 hover:text-slate-900"
 								>
-									contact@elinesolheim.com
+									contact@elinestorheim.com
 								</a>
 							</div>
 						</div>
@@ -122,8 +122,11 @@
 							</div>
 							<div>
 								<h3 class="text-lg font-medium text-slate-800">Press Inquiries</h3>
-								<a href="mailto:press@elinesolheim.com" class="text-slate-600 hover:text-slate-900">
-									press@elinesolheim.com
+								<a
+									href="mailto:press@elinestorheim.com"
+									class="text-slate-600 hover:text-slate-900"
+								>
+									press@elinestorheim.com
 								</a>
 							</div>
 						</div>

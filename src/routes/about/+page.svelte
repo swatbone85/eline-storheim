@@ -27,7 +27,7 @@
 
 			<div class="prose prose-slate prose-lg md:w-2/3">
 				<p class="lead text-xl">
-					Eline Solheim has established herself as one of the most compelling conductors of her
+					Eline storheim has established herself as one of the most compelling conductors of her
 					generation, bringing fresh interpretations to both classical masterpieces and contemporary
 					works.
 				</p>
@@ -103,7 +103,7 @@
 			<div class="grid gap-6 md:grid-cols-2">
 				<div class="rounded-lg bg-white p-6 shadow-md">
 					<p class="mb-4 text-slate-700 italic">
-						"Solheim conducts with remarkable clarity and purpose. Her interpretation of Sibelius
+						"storheim conducts with remarkable clarity and purpose. Her interpretation of Sibelius
 						brought new insights to even the most familiar passages."
 					</p>
 					<div class="text-right text-slate-600">
@@ -113,7 +113,7 @@
 
 				<div class="rounded-lg bg-white p-6 shadow-md">
 					<p class="mb-4 text-slate-700 italic">
-						"A rising star in the conducting world, Solheim draws extraordinary colors from the
+						"A rising star in the conducting world, storheim draws extraordinary colors from the
 						orchestra. Her Mahler was both intellectually rigorous and emotionally stirring."
 					</p>
 					<div class="text-right text-slate-600">
