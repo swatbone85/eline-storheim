@@ -9,8 +9,10 @@
 		<div class="mb-16 flex flex-col gap-10 md:flex-row">
 			<div class="md:w-1/3">
 				<!-- Placeholder for profile image -->
-				<div class="mb-4 aspect-[3/4] rounded-lg bg-slate-300 shadow-md">
-					<div class="flex h-full items-center justify-center text-slate-500">Profile Photo</div>
+				<div class="mb-4 aspect-[3/4] rounded-lg">
+					<div class="flex h-full items-center justify-center">
+						<img src="/images/profile.jpg" alt="" />
+					</div>
 				</div>
 
 				<!-- Quick facts -->

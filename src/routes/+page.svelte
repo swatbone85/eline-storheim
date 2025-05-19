@@ -14,7 +14,7 @@
 			<div class="mx-auto mb-10 aspect-[16/9] w-full max-w-3xl bg-slate-300">
 				<!-- Placeholder for hero image - replace with actual image when available -->
 				<div class="flex h-full items-center justify-center text-slate-500">
-					Featured Conductor Photo
+					<img src="/images/hero.jpg" alt="" />
 				</div>
 			</div>
 
