@@ -1,7 +1,9 @@
+import { PUBLIC_WORDPRESS_API_URL } from '$env/static/public';
+
 /** @type {import('./$types').PageLoad} */
 export async function load({ fetch }) {
 	// Use the WordPress container hostname instead of localhost
-	const wpApiUrl = import.meta.env.PUBLIC_WORDPRESS_API_URL || 'http://wordpress:80';
+	const wpApiUrl = PUBLIC_WORDPRESS_API_URL || 'http://wordpress:80';
 
 	try {
 		const res = await fetch(`${wpApiUrl}/wp-json/wp/v2/pages?slug=about`);
@@ -14,7 +16,7 @@ export async function load({ fetch }) {
 
 		// The API returns an array, but we only need the first item since we're querying by slug
 		return {
-			about: data[0] || null
+			about: data[0].acf || null
 		};
 	} catch (error) {
 		console.error('Error loading about page:', error);
