@@ -4,12 +4,13 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "3000:3000"
+      - "3005:3005" # Make sure binding to all interfaces, not just localhost
     volumes:
       - ./:/app
       - /app/node_modules
     environment:
       - PUBLIC_WORDPRESS_API_URL=http://wordpress:80
+      - HOST=0.0.0.0  # Ensure the app binds to all interfaces
     depends_on:
       - wordpress
     networks:
@@ -18,7 +19,7 @@ services:
   wordpress:
     image: wordpress:latest
     ports:
-      - "8000:80"
+      - "7600:80"
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wordpress
@@ -46,7 +47,7 @@ services:
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     ports:
-      - "8081:80"
+      - "7601:80" # Changed from 8081 to 8082
     environment:
       PMA_HOST: db
       MYSQL_ROOT_PASSWORD: root
@@ -60,4 +61,3 @@ networks:
 volumes:
   wordpress_data:
   db_data:
-

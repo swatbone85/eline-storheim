@@ -13,10 +13,10 @@
 	// Navigation links
 	const navLinks = [
 		{ href: '/', label: 'Home' },
-		{ href: '/about', label: 'About' },
-		{ href: '/performances', label: 'Performances' },
-		{ href: '/media', label: 'Media' },
-		{ href: '/contact', label: 'Contact' }
+		{ href: '/about', label: 'About' }
+		// { href: '/performances', label: 'Performances' },
+		// { href: '/media', label: 'Media' },
+		// { href: '/contact', label: 'Contact' }
 	];
 </script>
 

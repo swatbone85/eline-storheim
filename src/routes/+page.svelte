@@ -17,10 +17,6 @@
 					<img src="/images/hero.jpg" alt="" />
 				</div>
 			</div>
-
-			<p class="mx-auto max-w-3xl text-lg leading-relaxed text-slate-700 md:text-xl">
-				Bringing musical masterpieces to life with passion, precision, and artistic vision.
-			</p>
 		</section>
 
 		<!-- Biography preview section -->
@@ -28,14 +24,11 @@
 			<h2 class="mb-6 text-center font-serif text-3xl text-slate-800 md:text-4xl">Biography</h2>
 			<div class="prose prose-lg mx-auto text-slate-700">
 				<p>
-					Eline Storheim is a distinguished conductor known for her dynamic interpretations of both
-					classical and contemporary repertoire. With a profound musical insight and commanding
-					podium presence, she has led performances with renowned orchestras across Europe and
-					beyond.
-				</p>
-				<p>
-					Her distinctive approach combines technical precision with emotional depth, creating
-					memorable performances that resonate with audiences and critics alike.
+					Originally from Manger, just outside of Bergen, and currently based in Kristiansand, Eline
+					is a Norwegian conductor with a background from the Norwegian Academy of Music and the
+					University of Stavanger. She works across a broad range of ensembles and is continually
+					developing as a conductor through competitions, masterclasses, and national talent
+					programs.
 				</p>
 				<div class="mt-6 text-center">
 					<a
@@ -49,7 +42,7 @@
 		</section>
 
 		<!-- Upcoming performances section -->
-		<section class="mb-20">
+		<!-- <section class="mb-20">
 			<h2 class="mb-6 text-center font-serif text-3xl text-slate-800 md:text-4xl">
 				Upcoming Performances
 			</h2>
@@ -71,15 +64,15 @@
 					</a>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<!-- Contact section -->
 		<section>
 			<h2 class="mb-6 text-center font-serif text-3xl text-slate-800 md:text-4xl">Contact</h2>
 			<div class="mx-auto max-w-2xl text-center">
 				<p class="mb-6 text-lg text-slate-700">For bookings, interviews, and other inquiries:</p>
-				<a href="mailto:contact@elinestorheim.com" class="text-xl text-slate-800 hover:underline">
-					contact@elinestorheim.com
+				<a href="mailto:eline@storheim.no" class="text-xl text-slate-800 hover:underline">
+					eline@storheim.no
 				</a>
 			</div>
 		</section>
