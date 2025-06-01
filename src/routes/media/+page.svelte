@@ -10,6 +10,12 @@
 		type: 'performance' | 'interview' | 'masterclass';
 	}
 
+	interface PhotoItem {
+		id: number;
+		src: string;
+		alt: string;
+	}
+
 	// Sample video data
 	const videos: VideoItem[] = [
 		{
@@ -80,7 +86,7 @@
 		selectedPhoto = photo;
 		isPhotoModalOpen = true;
 		// Find the index of the selected photo
-		currentPhotoIndex = media.photos.findIndex((p) => p.src === photo.src);
+		currentPhotoIndex = media.photos.findIndex((p: PhotoItem) => p.src === photo.src);
 	}
 
 	function closePhotoModal() {
