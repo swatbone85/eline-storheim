@@ -1,0 +1,80 @@
+{
+    "photos": [
+        {
+            "src": "images/media/images/Portrett06.jpg",
+            "alt": "Portrett 06"
+        },
+        {
+            "src": "images/media/images/Portrett07.jpg",
+            "alt": "Portrett 07"
+        },
+        {
+            "src": "images/media/images/Portrett08.jpg",
+            "alt": "Portrett 08"
+        },
+        {
+            "src": "images/media/images/Portrett09.jpg",
+            "alt": "Portrett 09"
+        },
+        {
+            "src": "images/media/images/Portrett18.jpg",
+            "alt": "Portrett 18"
+        },
+        {
+            "src": "images/media/images/Portrett19.jpg",
+            "alt": "Portrett 19"
+        },
+        {
+            "src": "images/media/images/DK02.jpg",
+            "alt": "DK 02"
+        },
+        {
+            "src": "images/media/images/EBBA01.jpg",
+            "alt": "EBBA 01"
+        },
+        {
+            "src": "images/media/images/EBBA04.jpg",
+            "alt": "EBBA 04"
+        },
+        {
+            "src": "images/media/images/EBBA05.jpg",
+            "alt": "EBBA 05"
+        },
+        {
+            "src": "images/media/images/EBBA06.jpg",
+            "alt": "EBBA 06"
+        },
+        {
+            "src": "images/media/images/LFMK01.jpg",
+            "alt": "LFMK 01"
+        },
+        {
+            "src": "images/media/images/LFMK02.jpg",
+            "alt": "LFMK 02"
+        },
+        {
+            "src": "images/media/images/LFMK03.jpg",
+            "alt": "LFMK 03"
+        },
+        {
+            "src": "images/media/images/MML02.jpg",
+            "alt": "MML 02"
+        },
+        {
+            "src": "images/media/images/MML04.jpg",
+            "alt": "MML 04"
+        },
+        {
+            "src": "images/media/images/MML09.jpg",
+            "alt": "MML 09"
+        },
+        {
+            "src": "images/media/images/Sib-2 22.jpg",
+            "alt": "Sib 2 22"
+        },
+        {
+            "src": "images/media/images/Sib-2 23.jpg",
+            "alt": "Sib 2 23"
+        }
+    ]
+}

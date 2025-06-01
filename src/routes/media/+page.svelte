@@ -33,44 +33,44 @@
 	const videos: VideoItem[] = [
 		{
 			id: 1,
-			title: 'Beethoven Symphony No. 7',
-			thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg', // Placeholder image
+			title: 'Wilby - Lowry Sketchbook',
+			thumbnail: 'https://img.youtube.com/vi/rH9jew0MnRM/hqdefault.jpg',
 			description:
-				"Eline Storheim conducts the Copenhagen Philharmonic in Beethoven's Symphony No. 7.",
+				'From the finale of the conducting competition of the European Brass Band Competition.',
 			date: 'March 15, 2025',
-			videoId: 'dQw4w9WgXcQ', // This is just a placeholder YouTube ID
+			videoId: 'rH9jew0MnRM',
 			type: 'performance'
-		},
-		{
-			id: 2,
-			title: 'Interview: The Art of Conducting',
-			thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg', // Placeholder image
-			description:
-				'Eline Storheim discusses her approach to conducting and musical interpretation.',
-			date: 'February 3, 2025',
-			videoId: 'dQw4w9WgXcQ', // This is just a placeholder YouTube ID
-			type: 'interview'
-		},
-		{
-			id: 3,
-			title: 'Sibelius Violin Concerto',
-			thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg', // Placeholder image
-			description:
-				'Eline Storheim conducts the Stockholm Royal Orchestra with soloist Maria Johansson.',
-			date: 'January 20, 2025',
-			videoId: 'dQw4w9WgXcQ', // This is just a placeholder YouTube ID
-			type: 'performance'
-		},
-		{
-			id: 4,
-			title: 'Conducting Masterclass',
-			thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg', // Placeholder image
-			description:
-				'Eline Storheim gives a masterclass on conducting technique at the Royal Danish Academy of Music.',
-			date: 'December 5, 2024',
-			videoId: 'dQw4w9WgXcQ', // This is just a placeholder YouTube ID
-			type: 'masterclass'
 		}
+		// {
+		// 	id: 2,
+		// 	title: 'Interview: The Art of Conducting',
+		// 	thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg', // Placeholder image
+		// 	description:
+		// 		'Eline Storheim discusses her approach to conducting and musical interpretation.',
+		// 	date: 'February 3, 2025',
+		// 	videoId: 'dQw4w9WgXcQ', // This is just a placeholder YouTube ID
+		// 	type: 'interview'
+		// },
+		// {
+		// 	id: 3,
+		// 	title: 'Sibelius Violin Concerto',
+		// 	thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg', // Placeholder image
+		// 	description:
+		// 		'Eline Storheim conducts the Stockholm Royal Orchestra with soloist Maria Johansson.',
+		// 	date: 'January 20, 2025',
+		// 	videoId: 'dQw4w9WgXcQ', // This is just a placeholder YouTube ID
+		// 	type: 'performance'
+		// },
+		// {
+		// 	id: 4,
+		// 	title: 'Conducting Masterclass',
+		// 	thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg', // Placeholder image
+		// 	description:
+		// 		'Eline Storheim gives a masterclass on conducting technique at the Royal Danish Academy of Music.',
+		// 	date: 'December 5, 2024',
+		// 	videoId: 'dQw4w9WgXcQ', // This is just a placeholder YouTube ID
+		// 	type: 'masterclass'
+		// }
 	];
 
 	// Sample audio recordings
@@ -136,7 +136,7 @@
 	];
 
 	// Active tab state
-	let activeTab: 'videos' | 'recordings' | 'press' = 'videos';
+	let activeTab: 'videos' | 'images' | 'press' = 'videos';
 
 	// Active video filter
 	let videoFilter: 'all' | 'performance' | 'interview' | 'masterclass' = 'all';
@@ -158,6 +158,19 @@
 		isModalOpen = false;
 		selectedVideo = null;
 	}
+
+	export let data;
+
+	$: media = data.media;
+
+	// let media;
+	// const loadMedia = async () => {
+	// 	media = await fetch('/images/media/media.json');
+	// };
+
+	// loadMedia().catch((error) => {
+	// 	console.error('Error loading media:', error);
+	// });
 </script>
 
 <svelte:head>
@@ -187,20 +200,12 @@
 					Videos
 				</button>
 				<button
-					class="border-b-2 px-1 py-4 text-lg font-medium {activeTab === 'recordings'
+					class="border-b-2 px-1 py-4 text-lg font-medium {activeTab === 'images'
 						? 'border-slate-800 text-slate-800'
 						: 'border-transparent text-slate-500 hover:border-slate-300 hover:text-slate-700'}"
-					on:click={() => (activeTab = 'recordings')}
+					on:click={() => (activeTab = 'images')}
 				>
-					Recordings
-				</button>
-				<button
-					class="border-b-2 px-1 py-4 text-lg font-medium {activeTab === 'press'
-						? 'border-slate-800 text-slate-800'
-						: 'border-transparent text-slate-500 hover:border-slate-300 hover:text-slate-700'}"
-					on:click={() => (activeTab = 'press')}
-				>
-					Press
+					Images
 				</button>
 			</nav>
 		</div>
@@ -208,42 +213,6 @@
 		<!-- Tab content -->
 		{#if activeTab === 'videos'}
 			<div>
-				<!-- Video filters -->
-				<div class="mb-8 flex flex-wrap gap-2">
-					<button
-						class="rounded-full px-4 py-2 {videoFilter === 'all'
-							? 'bg-slate-800 text-white'
-							: 'bg-slate-200 text-slate-700 hover:bg-slate-300'}"
-						on:click={() => (videoFilter = 'all')}
-					>
-						All Videos
-					</button>
-					<button
-						class="rounded-full px-4 py-2 {videoFilter === 'performance'
-							? 'bg-slate-800 text-white'
-							: 'bg-slate-200 text-slate-700 hover:bg-slate-300'}"
-						on:click={() => (videoFilter = 'performance')}
-					>
-						Performances
-					</button>
-					<button
-						class="rounded-full px-4 py-2 {videoFilter === 'interview'
-							? 'bg-slate-800 text-white'
-							: 'bg-slate-200 text-slate-700 hover:bg-slate-300'}"
-						on:click={() => (videoFilter = 'interview')}
-					>
-						Interviews
-					</button>
-					<button
-						class="rounded-full px-4 py-2 {videoFilter === 'masterclass'
-							? 'bg-slate-800 text-white'
-							: 'bg-slate-200 text-slate-700 hover:bg-slate-300'}"
-						on:click={() => (videoFilter = 'masterclass')}
-					>
-						Masterclasses
-					</button>
-				</div>
-
 				<!-- Video grid -->
 				<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 					{#each filteredVideos as video}
@@ -254,28 +223,6 @@
 									alt={video.title}
 									class="aspect-video w-full object-cover"
 								/>
-								<div
-									class="bg-opacity-20 absolute inset-0 flex items-center justify-center bg-slate-900"
-								>
-									<div
-										class="bg-opacity-70 flex h-16 w-16 items-center justify-center rounded-full bg-slate-900"
-									>
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											fill="none"
-											viewBox="0 0 24 24"
-											stroke-width="1.5"
-											stroke="currentColor"
-											class="h-8 w-8 text-white"
-										>
-											<path
-												stroke-linecap="round"
-												stroke-linejoin="round"
-												d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
-											/>
-										</svg>
-									</div>
-								</div>
 							</button>
 							<div class="p-4">
 								<div class="mb-1 text-xs font-medium text-slate-500 uppercase">
@@ -295,61 +242,16 @@
 					</div>
 				{/if}
 			</div>
-		{:else if activeTab === 'recordings'}
+		{:else if activeTab === 'images'}
 			<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-				{#each recordings as recording}
+				{#each media.photos as photo}
 					<div class="overflow-hidden rounded-lg bg-white shadow-md">
 						<div class="p-4">
 							<img
-								src={recording.coverImage}
-								alt={recording.title}
+								src={photo.src}
+								alt={photo.alt}
 								class="mb-4 aspect-square w-full rounded object-cover"
 							/>
-							<h3 class="mb-1 font-serif text-lg font-semibold">{recording.title}</h3>
-							<p class="mb-3 text-slate-600">{recording.composer}</p>
-							<div class="flex justify-between text-sm text-slate-500">
-								<span>{recording.orchestra}</span>
-								<span>{recording.date}</span>
-							</div>
-							<div class="mt-4 text-sm text-slate-500">
-								<span>Duration: {recording.duration}</span>
-							</div>
-							<div class="mt-4 flex justify-between">
-								<button class="flex items-center text-slate-700 hover:text-slate-900">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 24 24"
-										stroke-width="1.5"
-										stroke="currentColor"
-										class="mr-1 h-5 w-5"
-									>
-										<path
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z"
-										/>
-									</svg>
-									Listen
-								</button>
-								<button class="flex items-center text-slate-700 hover:text-slate-900">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 24 24"
-										stroke-width="1.5"
-										stroke="currentColor"
-										class="mr-1 h-5 w-5"
-									>
-										<path
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											d="M9 13.5l3 3m0 0l3-3m-3 3v-6m1.06-4.19l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44L10.5 4.19z"
-										/>
-									</svg>
-									Buy
-								</button>
-							</div>
 						</div>
 					</div>
 				{/each}
