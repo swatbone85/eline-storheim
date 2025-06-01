@@ -71,13 +71,48 @@
 		selectedVideo = null;
 	}
 
+	// Photo modal state
+	let selectedPhoto: { src: string; alt: string } | null = null;
+	let isPhotoModalOpen = false;
+	let currentPhotoIndex = 0;
+
+	function openPhotoModal(photo: { src: string; alt: string }) {
+		selectedPhoto = photo;
+		isPhotoModalOpen = true;
+		// Find the index of the selected photo
+		currentPhotoIndex = media.photos.findIndex((p) => p.src === photo.src);
+	}
+
+	function closePhotoModal() {
+		isPhotoModalOpen = false;
+		selectedPhoto = null;
+	}
+
+	function nextPhoto() {
+		if (currentPhotoIndex < media.photos.length - 1) {
+			currentPhotoIndex++;
+		} else {
+			currentPhotoIndex = 0;
+		}
+		selectedPhoto = media.photos[currentPhotoIndex];
+	}
+
+	function prevPhoto() {
+		if (currentPhotoIndex > 0) {
+			currentPhotoIndex--;
+		} else {
+			currentPhotoIndex = media.photos.length - 1;
+		}
+		selectedPhoto = media.photos[currentPhotoIndex];
+	}
+
 	export let data;
 
 	$: media = data.media;
 </script>
 
 <svelte:head>
-	{#if isModalOpen}
+	{#if isModalOpen || isPhotoModalOpen}
 		<!-- Prevent scrolling when modal is open -->
 		<style>
 			body {
@@ -144,11 +179,17 @@
 				{#each media.photos as photo}
 					<div class="overflow-hidden rounded-lg bg-white shadow-md">
 						<div class="p-4">
-							<img
-								src={photo.src}
-								alt={photo.alt}
-								class="mb-4 aspect-square w-full rounded object-cover"
-							/>
+							<button
+								class="w-full border-0 bg-transparent p-0"
+								on:click={() => openPhotoModal(photo)}
+								aria-label={`View larger image of ${photo.alt}`}
+							>
+								<img
+									src={photo.src}
+									alt={photo.alt}
+									class="mb-4 aspect-square w-full rounded object-cover"
+								/>
+							</button>
 						</div>
 					</div>
 				{/each}
@@ -193,6 +234,73 @@
 			<div class="p-4">
 				<p class="mb-2 text-slate-700">{selectedVideo.description}</p>
 				<p class="text-sm text-slate-500">{selectedVideo.date}</p>
+			</div>
+		</div>
+	</div>
+{/if}
+
+<!-- Photo Modal -->
+{#if isPhotoModalOpen && selectedPhoto}
+	<div class="bg-opacity-75 fixed inset-0 z-50 flex items-center justify-center bg-slate-900 p-4">
+		<div class="max-h-[90vh] w-full max-w-4xl overflow-auto rounded-lg bg-white">
+			<div class="flex items-center justify-between border-b border-slate-200 p-4">
+				<div></div>
+				<!-- Empty div to maintain flex spacing -->
+				<button
+					on:click={closePhotoModal}
+					class="text-slate-500 hover:text-slate-700"
+					aria-label="Close photo"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="h-6 w-6"
+					>
+						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+					</svg>
+				</button>
+			</div>
+			<div class="relative flex items-center justify-center p-4">
+				<!-- Previous photo button -->
+				<button
+					on:click={prevPhoto}
+					class="bg-opacity-70 hover:bg-opacity-100 absolute left-8 rounded-full bg-white p-2 text-slate-700"
+					aria-label="Previous photo"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="h-6 w-6"
+					>
+						<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+					</svg>
+				</button>
+
+				<img src={selectedPhoto.src} alt={selectedPhoto.alt} class="max-h-[70vh] object-contain" />
+
+				<!-- Next photo button -->
+				<button
+					on:click={nextPhoto}
+					class="bg-opacity-70 hover:bg-opacity-100 absolute right-8 rounded-full bg-white p-2 text-slate-700"
+					aria-label="Next photo"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="h-6 w-6"
+					>
+						<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+					</svg>
+				</button>
 			</div>
 		</div>
 	</div>
