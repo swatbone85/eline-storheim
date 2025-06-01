@@ -83,6 +83,13 @@
 			<p>&copy; {new Date().getFullYear()} Eline Storheim. All rights reserved.</p>
 			<div class="mt-4 flex justify-center gap-6">
 				<a
+					href="https://www.muvac.com/en/profile/eline-storheim"
+					class="text-white hover:text-slate-300"
+					target="_blank"
+				>
+					Muvac</a
+				>
+				<a
 					href="https://www.instagram.com/storheimen/"
 					class="text-white hover:text-slate-300"
 					target="_blank"
