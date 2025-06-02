@@ -2,7 +2,7 @@
 	// Import necessary components and assets if needed
 </script>
 
-<div class="min-h-screen bg-gradient-to-b from-slate-100 to-slate-200">
+<div class="min-h-screen">
 	<main class="container mx-auto max-w-5xl px-4 py-16">
 		<!-- Hero section -->
 		<section class="mb-20 text-center">
@@ -77,32 +77,4 @@
 			</div>
 		</section>
 	</main>
-
-	<footer class="bg-slate-800 py-8 text-white">
-		<div class="container mx-auto px-4 text-center">
-			<p>&copy; {new Date().getFullYear()} Eline Storheim. All rights reserved.</p>
-			<div class="mt-4 flex justify-center gap-6">
-				<a
-					href="https://www.muvac.com/en/profile/eline-storheim"
-					class="text-white hover:text-slate-300"
-					target="_blank"
-				>
-					Muvac</a
-				>
-				<a
-					href="https://www.instagram.com/storheimen/"
-					class="text-white hover:text-slate-300"
-					target="_blank"
-				>
-					Instagram</a
-				>
-
-				<a
-					href="https://www.facebook.com/eline.storheim"
-					class="text-white hover:text-slate-300"
-					target="_blank">Facebook</a
-				>
-			</div>
-		</div>
-	</footer>
 </div>

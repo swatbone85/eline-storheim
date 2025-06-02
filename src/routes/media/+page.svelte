@@ -128,7 +128,7 @@
 	{/if}
 </svelte:head>
 
-<div class="bg-slate-50 py-16">
+<div class="py-16">
 	<div class="container mx-auto max-w-6xl px-4">
 		<h1 class="mb-12 text-center font-serif text-5xl text-slate-800">Media</h1>
 
@@ -247,7 +247,7 @@
 
 <!-- Photo Modal -->
 {#if isPhotoModalOpen && selectedPhoto}
-	<div class="bg-opacity-75 fixed inset-0 z-50 flex items-center justify-center bg-slate-900 p-4">
+	<div class="bg-opacity-75 bg-cream fixed inset-0 z-50 flex items-center justify-center p-4">
 		<div class="max-h-[90vh] w-full max-w-4xl overflow-auto rounded-lg bg-white">
 			<div class="flex items-center justify-between border-b border-slate-200 p-4">
 				<div></div>

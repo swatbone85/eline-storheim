@@ -7,7 +7,7 @@
 	$: description = about.description;
 </script>
 
-<div class="bg-slate-50 py-16">
+<div class="py-16">
 	<div class="container mx-auto max-w-4xl px-4">
 		<h1 class="mb-12 text-center font-serif text-5xl text-slate-800">{title}</h1>
 

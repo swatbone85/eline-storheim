@@ -1,5 +1,22 @@
 @import 'tailwindcss';
 
+@theme {
+  /* raw swatches */
+  --color-espresso: #1d0e0d;
+  --color-maroon: #502727;
+  --color-cream: #f6efe5;
+  --color-taupe: #c5b8ac;
+  --color-greige: #ada49b;
+  --color-charcoal: #675a53;
+  --color-gold: #9d8a74;
+
+  /* semantic helpers (optional) */
+  --color-primary: var(--color-espresso);
+  --color-primary-fg: var(--color-cream);
+  --color-accent: var(--color-maroon);
+  --color-accent-fg: var(--color-cream);
+}
+
 /* Custom fonts */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 
@@ -9,7 +26,12 @@
   font-weight: 400;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Playfair Display', serif;
 }
 
